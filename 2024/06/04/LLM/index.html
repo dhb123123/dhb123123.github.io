@@ -1,0 +1,518 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LLMThings | Welcome</title><meta name="author" content="dhb"><meta name="copyright" content="dhb"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="LLm1.API接口2.国内外大模型汇总2023 年热门的大型语言模型 (LLMs)汇总 - 知乎 (zhihu.com) 3. Info3.1 步骤 数据收集：收集大量的众包任务执行数据，包括任务描述、工人执行过程中的行为数据、以及任务完成情况等。这些数据将用于训练生成工人角色的大模型。 数据预处理：对收集到的数据进行清洗和预处理，确保数据的质量和完整性。这包括去除异常值、处理缺失数据、标准化数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLMThings">
+<meta property="og:url" content="https://dhb123123.github.io/2024/06/04/LLM/index.html">
+<meta property="og:site_name" content="Welcome">
+<meta property="og:description" content="LLm1.API接口2.国内外大模型汇总2023 年热门的大型语言模型 (LLMs)汇总 - 知乎 (zhihu.com) 3. Info3.1 步骤 数据收集：收集大量的众包任务执行数据，包括任务描述、工人执行过程中的行为数据、以及任务完成情况等。这些数据将用于训练生成工人角色的大模型。 数据预处理：对收集到的数据进行清洗和预处理，确保数据的质量和完整性。这包括去除异常值、处理缺失数据、标准化数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dhb123123.github.io/img/LLM%E5%85%A8%E9%83%A8%E8%BF%9B%E5%B1%95-dhb.png">
+<meta property="article:published_time" content="2024-06-04T05:55:05.000Z">
+<meta property="article:modified_time" content="2024-06-04T06:55:14.863Z">
+<meta property="article:author" content="dhb">
+<meta property="article:tag" content="LLM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dhb123123.github.io/img/LLM%E5%85%A8%E9%83%A8%E8%BF%9B%E5%B1%95-dhb.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://dhb123123.github.io/2024/06/04/LLM/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LLMThings',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-04 14:55:14'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-bookmark"></i><span> 找文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> Something</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/LLM%E5%85%A8%E9%83%A8%E8%BF%9B%E5%B1%95-dhb.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Welcome"><span class="site-name">Welcome</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-bookmark"></i><span> 找文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> Something</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">LLMThings</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-04T05:55:05.000Z" title="发表于 2024-06-04 13:55:05">2024-06-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-04T06:55:14.863Z" title="更新于 2024-06-04 14:55:14">2024-06-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/LLM/">LLM</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="LLMThings"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="LLm"><a href="#LLm" class="headerlink" title="LLm"></a>LLm</h1><h2 id="1-API接口"><a href="#1-API接口" class="headerlink" title="1.API接口"></a>1.API接口</h2><h2 id="2-国内外大模型汇总"><a href="#2-国内外大模型汇总" class="headerlink" title="2.国内外大模型汇总"></a>2.国内外大模型汇总</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/653725912">2023 年热门的大型语言模型 (LLMs)汇总 - 知乎 (zhihu.com)</a></p>
+<h2 id="3-Info"><a href="#3-Info" class="headerlink" title="3. Info"></a>3. Info</h2><h3 id="3-1-步骤"><a href="#3-1-步骤" class="headerlink" title="3.1 步骤"></a>3.1 步骤</h3><ol>
+<li><strong>数据收集</strong>：收集大量的众包任务执行数据，包括任务描述、工人执行过程中的行为数据、以及任务完成情况等。这些数据将用于训练生成工人角色的大模型。</li>
+<li><strong>数据预处理</strong>：对收集到的数据进行清洗和预处理，确保数据的质量和完整性。这包括去除异常值、处理缺失数据、标准化数据格式等。</li>
+<li><strong>模型选择</strong>：选择合适的大模型来生成众包工人角色。可以考虑使用生成对抗网络（GAN）或变分自动编码器（VAE）等模型，这些模型在生成具有一定属性的数据方面有很好的效果。</li>
+<li><strong>模型训练</strong>：使用准备好的数据集对选择的大模型进行训练。训练过程中需要关注模型的收敛情况和生成结果的质量，可能需要多次调整模型架构和参数以获得最佳效果。</li>
+<li><strong>模型评估</strong>：评估训练好的大模型生成的工人角色的质量和逼真度。可以使用定量指标（如生成的工人角色与真实工人的相似度）和定性评价（人工观察和分析生成结果）来进行评估。</li>
+<li><strong>集成到众包平台</strong>：将训练好的大模型集成到众包平台中，作为一个工具或功能供平台管理员或任务发布者使用。确保生成的工人角色符合任务的需求，并且与真实工人的行为相匹配。</li>
+<li><strong>持续改进</strong>：定期收集反馈数据，不断改进大模型的训练和生成过程。可以考虑引入增量式学习或在线学习的方法，使模型能够及时适应新的数据和任务需求。</li>
+</ol>
+<h3 id="3-2-收集数据"><a href="#3-2-收集数据" class="headerlink" title="3.2 收集数据"></a>3.2 收集数据</h3><ol>
+<li><strong>数据收集和预处理</strong><ul>
+<li>收集大量与不同工人角色相关的数据,包括工作描述、技能要求、行为模式、语言特征等。</li>
+<li>对这些数据进行清洗、标注和结构化处理,为模型训练做好准备。</li>
+</ul>
+</li>
+<li><strong>特征提取和表征学习</strong><ul>
+<li>使用大模型(如BERT、GPT等)对工人角色数据进行特征提取和表征学习。</li>
+<li>将文本数据转换为向量表示,捕捉工人角色的语义和上下文信息。</li>
+<li>也可以使用知识图谱等技术来表示工人角色之间的关系和属性。</li>
+</ul>
+</li>
+<li><strong>角色聚类和原型生成</strong><ul>
+<li>基于学习到的工人角色表征,使用聚类算法(如K-Means、DBSCAN等)对角色进行聚类。</li>
+<li>每个聚类可以代表一种原型工人角色,具有共同的特征和属性。</li>
+<li>可以从每个聚类中抽取出代表性的原型向量,作为生成该角色的基础。</li>
+</ul>
+</li>
+<li><strong>条件生成模型训练</strong><ul>
+<li>使用生成式大模型(如GPT-3、DALL-E等)训练一个条件生成模型。</li>
+<li>输入为任务描述、所需技能等条件,输出为符合条件的工人角色描述。</li>
+<li>在训练过程中,使用上述原型向量作为条件,指导模型生成所需的工人角色。</li>
+</ul>
+</li>
+<li><strong>交互式优化和微调</strong><ul>
+<li>引入人工反馈机制,由人工评估生成的工人角色质量。</li>
+<li>根据反馈,使用强化学习等方法优化生成模型的策略。</li>
+<li>也可以在特定任务或领域数据上,对生成模型进行微调和个性化。</li>
+</ul>
+</li>
+<li><strong>多模态融合</strong><ul>
+<li>除了文本数据,还可以利用工人角色的音视频数据、行为数据等多模态信息。</li>
+<li>使用多模态大模型捕捉工人角色的多方面特征,生成更加真实和丰富的角色。</li>
+</ul>
+</li>
+<li><strong>角色交互和协作建模</strong><ul>
+<li>模拟多个工人角色之间的交互过程,建立角色之间的协作关系模型。</li>
+<li>生成的角色不仅有个体特征,还能根据场景和任务进行协作和互动。</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-数据"><a href="#4-数据" class="headerlink" title="4 数据"></a>4 数据</h2><h3 id="4-1-提示数据"><a href="#4-1-提示数据" class="headerlink" title="4.1 提示数据"></a>4.1 提示数据</h3><p><a href="prompts.csv">D:\Desktop\thing\Data\prompts.csv</a></p>
+<p>prompts生成角色提示数据</p>
+<p><img src="D:\BlogFile\source_posts\assets\image-20240328184914224-1717482783649-1.png" alt="image-20240328184914224"></p>
+<h2 id="5-具体怎样的特征"><a href="#5-具体怎样的特征" class="headerlink" title="5. 具体怎样的特征"></a>5. 具体怎样的特征</h2><h2 id="6-ToDoList"><a href="#6-ToDoList" class="headerlink" title="6.ToDoList"></a>6.ToDoList</h2><h3 id="4-18-使用具体的特征"><a href="#4-18-使用具体的特征" class="headerlink" title="4.18 使用具体的特征"></a>4.18 使用具体的特征</h3><p>1.用怎样的特征去生成工人，具体的特征比如严谨等词。<br>2.相同的特征，生成的角色不同，差异性。找论文<br>3.特征之间的关系<br>4.相同的特征生成角色后，模型之间的差异<br>5.模型的幻觉，相同的特征生成角色后，可能会根据特征胡乱生成角色<br>6.在特定的场景下(众包），比如写作，画图等场景，工人需要怎样的特征，适合怎样的特征。<br>7.用特征生成角色时，删除某些特征，仍然能生成较好的角色。</p>
+<p>——————————————————————<br>总结：用怎样的具体的特征去生成工人角色</p>
+<h3 id="4-25-完成怎样的任务"><a href="#4-25-完成怎样的任务" class="headerlink" title="4.25 完成怎样的任务"></a>4.25 完成怎样的任务</h3><p>1.大模型评估的任务，特定问题容易验证(A,B,C)选项的</p>
+<p>2.提示词多样性，律师有什么特性（谨慎等），医生有什么特性</p>
+<h3 id="5-27"><a href="#5-27" class="headerlink" title="5.27"></a><strong>5.27</strong></h3><h4 id="实验设计"><a href="#实验设计" class="headerlink" title="实验设计"></a>实验设计</h4><h5 id="实验1：生成具有具体特征的工人角色"><a href="#实验1：生成具有具体特征的工人角色" class="headerlink" title="实验1：生成具有具体特征的工人角色"></a>实验1：生成具有具体特征的工人角色</h5><p><strong>实验目的</strong>：探讨特定人格特征如何影响工人角色的生成。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择一组具体特征，如严谨、勤奋、合作、可靠、创造力、灵活性等。</li>
+<li><strong>生成角色</strong>：使用大模型生成多个工人角色，每个角色具备上述一个或多个特征。</li>
+<li><strong>评价标准</strong>：由人类评审员对生成的角色进行评价，判断角色是否符合所指定的特征。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入特定特征到大模型中生成工人角色。</li>
+<li>收集生成的角色描述。</li>
+<li>人类评审员对角色描述进行打分，判断角色是否符合指定特征。</li>
+</ol>
+<h5 id="实验2：相同特征生成的角色差异性研究"><a href="#实验2：相同特征生成的角色差异性研究" class="headerlink" title="实验2：相同特征生成的角色差异性研究"></a>实验2：相同特征生成的角色差异性研究</h5><p><strong>实验目的</strong>：分析相同特征下生成的不同角色之间的差异性。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成角色</strong>：使用大模型多次生成带有相同特征的角色。</li>
+<li><strong>差异分析</strong>：比较生成的角色，分析其在性格、行为、背景等方面的差异。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>重复输入相同特征，生成多个角色。</li>
+<li>对比这些角色在细节上的差异，如背景故事、行为模式等。</li>
+<li>统计分析角色差异的主要方面。</li>
+</ol>
+<h5 id="实验3：特征之间的关系研究"><a href="#实验3：特征之间的关系研究" class="headerlink" title="实验3：特征之间的关系研究"></a>实验3：特征之间的关系研究</h5><p><strong>实验目的</strong>：探讨不同人格特征之间的相互关系和影响。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征组合</strong>：设计具有不同特征组合的角色，如严谨且合作、外向且创造力强等。</li>
+<li><strong>生成角色</strong>：使用大模型生成具有这些组合特征的角色。</li>
+<li><strong>关系分析</strong>：分析特征组合对角色整体行为和性格的影响。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入特征组合，生成相应的角色。</li>
+<li>分析角色在特征表现上的相互影响。</li>
+<li>人类评审员评估这些角色的整体一致性和合理性。</li>
+</ol>
+<h5 id="实验4：相同特征下不同模型生成角色的差异"><a href="#实验4：相同特征下不同模型生成角色的差异" class="headerlink" title="实验4：相同特征下不同模型生成角色的差异"></a>实验4：相同特征下不同模型生成角色的差异</h5><p><strong>实验目的</strong>：比较不同大模型在相同特征下生成角色的差异。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>模型选择</strong>：选择多个不同的大模型，如GPT-4、BERT、T5等。</li>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成角色</strong>：使用不同模型生成带有相同特征的角色。</li>
+<li><strong>模型比较</strong>：比较不同模型生成角色的表现和差异。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>使用不同模型输入相同特征，生成角色。</li>
+<li>比较和分析不同模型生成的角色在细节和一致性上的差异。</li>
+<li>评估各模型在特定特征生成上的表现。</li>
+</ol>
+<h5 id="实验5：模型幻觉研究"><a href="#实验5：模型幻觉研究" class="headerlink" title="实验5：模型幻觉研究"></a>实验5：模型幻觉研究</h5><p><strong>实验目的</strong>：探讨大模型在生成角色时可能出现的幻觉现象，即生成不符合特征描述的角色。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成角色</strong>：使用大模型生成带有这些特征的角色。</li>
+<li><strong>幻觉检测</strong>：分析生成的角色是否存在不符合特征描述的情况。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入特定特征，生成角色。</li>
+<li>由人类评审员评估角色是否符合特征描述。</li>
+<li>记录并分析任何不符合特征描述的幻觉现象。</li>
+</ol>
+<h5 id="实验6：特定场景下工人的特征适配性研究"><a href="#实验6：特定场景下工人的特征适配性研究" class="headerlink" title="实验6：特定场景下工人的特征适配性研究"></a>实验6：特定场景下工人的特征适配性研究</h5><p><strong>实验目的</strong>：探讨在特定任务场景下，哪些特征的工人更适合完成任务。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>场景选择</strong>：选择如写作、画图、数据录入等任务场景。</li>
+<li><strong>特征选择</strong>：选择如严谨、创造力、合作等特征。</li>
+<li><strong>生成角色</strong>：使用大模型生成具有不同特征的工人角色。</li>
+<li><strong>任务表现</strong>：模拟工人完成任务的表现，评估哪些特征更适合特定场景。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>选择特定任务场景。</li>
+<li>输入适合任务的特征，生成工人角色。</li>
+<li>模拟工人角色完成任务，评估其表现。</li>
+</ol>
+<h5 id="实验7：特征删除对生成角色的影响研究"><a href="#实验7：特征删除对生成角色的影响研究" class="headerlink" title="实验7：特征删除对生成角色的影响研究"></a>实验7：特征删除对生成角色的影响研究</h5><p><strong>实验目的</strong>：探讨在特征生成过程中删除某些特征对角色生成的影响。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择一组综合特征，如严谨、合作、创造力等。</li>
+<li><strong>生成角色</strong>：逐步删除某些特征，生成角色。</li>
+<li><strong>影响分析</strong>：评估删除特征后角色生成的质量和一致性。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入完整特征组合，生成角色。</li>
+<li>逐步删除特征，生成新的角色。</li>
+<li>比较和分析删除特征对角色生成的影响。</li>
+</ol>
+<h4 id="实验1：不同特征的角色完成选择题的准确率"><a href="#实验1：不同特征的角色完成选择题的准确率" class="headerlink" title="实验1：不同特征的角色完成选择题的准确率"></a>实验1：不同特征的角色完成选择题的准确率</h4><p><strong>实验目的</strong>：探讨不同特征的角色在完成选择题任务时的准确率。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成角色</strong>：使用大模型生成具有不同特征的角色。</li>
+<li><strong>选择题设计</strong>：设计一组涵盖广泛领域的选择题，如逻辑推理、常识判断、道德伦理等。</li>
+<li><strong>任务完成</strong>：让生成的角色完成选择题。</li>
+<li><strong>准确率评估</strong>：统计和比较不同特征角色的选择题准确率。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入特定特征，生成角色。</li>
+<li>设计一组多样化的选择题。</li>
+<li>让生成的角色完成选择题。</li>
+<li>统计每个角色的选择题准确率，并进行比较分析。</li>
+</ol>
+<h4 id="实验2：相同特征的不同角色在选择题上的表现差异"><a href="#实验2：相同特征的不同角色在选择题上的表现差异" class="headerlink" title="实验2：相同特征的不同角色在选择题上的表现差异"></a>实验2：相同特征的不同角色在选择题上的表现差异</h4><p><strong>实验目的</strong>：评估带有相同特征的不同角色在完成选择题任务时的表现差异。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成多个角色</strong>：使用大模型生成带有相同特征的多个角色。</li>
+<li><strong>选择题设计</strong>：设计一组选择题。</li>
+<li><strong>任务完成</strong>：让这些角色完成相同的选择题。</li>
+<li><strong>差异分析</strong>：统计和比较带有相同特征的不同角色的选择题准确率，分析表现差异。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入相同特征，生成多个角色。</li>
+<li>设计一组选择题。</li>
+<li>让生成的角色完成选择题。</li>
+<li>统计和比较角色的选择题准确率，分析差异。</li>
+</ol>
+<h4 id="实验3：特征组合对选择题准确率的影响"><a href="#实验3：特征组合对选择题准确率的影响" class="headerlink" title="实验3：特征组合对选择题准确率的影响"></a>实验3：特征组合对选择题准确率的影响</h4><p><strong>实验目的</strong>：探讨不同特征组合对角色完成选择题准确率的影响。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征组合</strong>：选择多种特征组合，如严谨且合作、外向且创造力强等。</li>
+<li><strong>生成角色</strong>：使用大模型生成具有不同特征组合的角色。</li>
+<li><strong>选择题设计</strong>：设计一组选择题。</li>
+<li><strong>任务完成</strong>：让这些角色完成选择题。</li>
+<li><strong>组合影响分析</strong>：统计和比较不同特征组合的角色在选择题上的准确率，分析特征组合的影响。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入不同特征组合，生成角色。</li>
+<li>设计一组选择题。</li>
+<li>让生成的角色完成选择题。</li>
+<li>统计和比较角色的选择题准确率，分析特征组合的影响。</li>
+</ol>
+<h4 id="实验4：不同模型生成角色的选择题准确率比较"><a href="#实验4：不同模型生成角色的选择题准确率比较" class="headerlink" title="实验4：不同模型生成角色的选择题准确率比较"></a>实验4：不同模型生成角色的选择题准确率比较</h4><p><strong>实验目的</strong>：比较不同大模型生成的带有相同特征的角色在选择题任务上的准确率。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>模型选择</strong>：选择多个不同的大模型，如GPT-4、BERT、T5等。</li>
+<li><strong>特征选择</strong>：选择如严谨、外向、热情等特征。</li>
+<li><strong>生成角色</strong>：使用不同模型生成带有相同特征的角色。</li>
+<li><strong>选择题设计</strong>：设计一组选择题。</li>
+<li><strong>任务完成</strong>：让生成的角色完成选择题。</li>
+<li><strong>模型比较</strong>：统计和比较不同模型生成角色的选择题准确率，分析模型之间的差异。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>使用不同模型输入相同特征，生成角色。</li>
+<li>设计一组选择题。</li>
+<li>让生成的角色完成选择题。</li>
+<li>统计和比较不同模型生成角色的选择题准确率，分析差异。</li>
+</ol>
+<h4 id="实验5：角色在特定任务场景下的选择题表现"><a href="#实验5：角色在特定任务场景下的选择题表现" class="headerlink" title="实验5：角色在特定任务场景下的选择题表现"></a>实验5：角色在特定任务场景下的选择题表现</h4><p><strong>实验目的</strong>：探讨带有特定特征的角色在特定任务场景下完成选择题的准确率。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>任务场景选择</strong>：选择如写作、画图、数据录入等任务场景。</li>
+<li><strong>特征选择</strong>：选择如严谨、创造力、合作等特征。</li>
+<li><strong>生成角色</strong>：使用大模型生成带有特定特征的角色。</li>
+<li><strong>选择题设计</strong>：设计与任务场景相关的选择题。</li>
+<li><strong>任务完成</strong>：让角色在特定任务场景下完成选择题。</li>
+<li><strong>表现评估</strong>：统计和比较角色在特定场景下的选择题准确率。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>选择特定任务场景。</li>
+<li>输入适合任务的特征，生成角色。</li>
+<li>设计与任务场景相关的选择题。</li>
+<li>让生成的角色完成选择题。</li>
+<li>统计和比较角色的选择题准确率，评估其表现。</li>
+</ol>
+<h4 id="实验6：删除某些特征对角色选择题表现的影响"><a href="#实验6：删除某些特征对角色选择题表现的影响" class="headerlink" title="实验6：删除某些特征对角色选择题表现的影响"></a>实验6：删除某些特征对角色选择题表现的影响</h4><p><strong>实验目的</strong>：探讨在特征生成过程中删除某些特征对角色完成选择题准确率的影响。</p>
+<p><strong>实验设计</strong>：</p>
+<ul>
+<li><strong>特征选择</strong>：选择一组综合特征，如严谨、合作、创造力等。</li>
+<li><strong>生成角色</strong>：逐步删除某些特征，生成角色。</li>
+<li><strong>选择题设计</strong>：设计一组选择题。</li>
+<li><strong>任务完成</strong>：让这些角色完成选择题。</li>
+<li><strong>影响分析</strong>：统计和比较删除特征后角色的选择题准确率，分析特征缺失的影响。</li>
+</ul>
+<p><strong>实验步骤</strong>：</p>
+<ol>
+<li>输入完整特征组合，生成角色。</li>
+<li>设计一组选择题。</li>
+<li>逐步删除特征，生成新的角色并完成选择题。</li>
+<li>统计和比较删除特征后角色的选择题准确率，分析影响。</li>
+</ol>
+<h4 id="具体步骤与数据分析"><a href="#具体步骤与数据分析" class="headerlink" title="具体步骤与数据分析"></a>具体步骤与数据分析</h4><ol>
+<li><p><strong>生成角色</strong>：使用大模型根据预设特征生成角色。</p>
+</li>
+<li><p><strong>设计选择题</strong>：选择题应涵盖逻辑推理、常识判断、道德伦理、任务相关知识等多方面内容。</p>
+</li>
+<li><p><strong>角色完成选择题</strong>：模拟生成角色完成选择题的过程，记录每个角色的答案。</p>
+</li>
+<li><p><strong>准确率计算</strong>：对每个角色的选择题答案进行评分，计算准确率。</p>
+</li>
+<li><p>数据分析</p>
+<p>：</p>
+<ul>
+<li><strong>比较不同特征的角色准确率</strong>，找出哪些特征的角色在选择题上表现更好。</li>
+<li><strong>分析相同特征的不同角色的表现差异</strong>，评估模型生成角色的一致性。</li>
+<li><strong>研究特征组合对准确率的影响</strong>，找出哪些特征组合更有助于提高准确率。</li>
+<li><strong>比较不同模型生成角色的表现</strong>，评估不同模型的生成能力。</li>
+<li><strong>评估特定任务场景下的角色表现</strong>，找出最适合特定任务的角色特征。</li>
+<li><strong>分析删除某些特征对准确率的影响</strong>，评估特征对角色生成的重要性。</li>
+</ul>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://dhb123123.github.io">dhb</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://dhb123123.github.io/2024/06/04/LLM/">https://dhb123123.github.io/2024/06/04/LLM/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://dhb123123.github.io" target="_blank">Welcome</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LLM/">LLM</a></div><div class="post_share"><div class="social-share" data-image="/img/LLM%E5%85%A8%E9%83%A8%E8%BF%9B%E5%B1%95-dhb.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/06/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" title="这个是我的第一个博客"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">这个是我的第一个博客</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">dhb</div><div class="author-info__description">DHB的个人记录博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/dashboard"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/dashboard" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/2367100693@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#LLm"><span class="toc-number">1.</span> <span class="toc-text">LLm</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-API%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.</span> <span class="toc-text">1.API接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%9B%BD%E5%86%85%E5%A4%96%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%B1%87%E6%80%BB"><span class="toc-number">1.2.</span> <span class="toc-text">2.国内外大模型汇总</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Info"><span class="toc-number">1.3.</span> <span class="toc-text">3. Info</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%94%B6%E9%9B%86%E6%95%B0%E6%8D%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 收集数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.</span> <span class="toc-text">4 数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%8F%90%E7%A4%BA%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 提示数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%85%B7%E4%BD%93%E6%80%8E%E6%A0%B7%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.5.</span> <span class="toc-text">5. 具体怎样的特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-ToDoList"><span class="toc-number">1.6.</span> <span class="toc-text">6.ToDoList</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-18-%E4%BD%BF%E7%94%A8%E5%85%B7%E4%BD%93%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.6.1.</span> <span class="toc-text">4.18 使用具体的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-25-%E5%AE%8C%E6%88%90%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.6.2.</span> <span class="toc-text">4.25 完成怎样的任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-27"><span class="toc-number">1.6.3.</span> <span class="toc-text">5.27</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.6.3.1.</span> <span class="toc-text">实验设计</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C1%EF%BC%9A%E7%94%9F%E6%88%90%E5%85%B7%E6%9C%89%E5%85%B7%E4%BD%93%E7%89%B9%E5%BE%81%E7%9A%84%E5%B7%A5%E4%BA%BA%E8%A7%92%E8%89%B2"><span class="toc-number">1.6.3.1.1.</span> <span class="toc-text">实验1：生成具有具体特征的工人角色</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C2%EF%BC%9A%E7%9B%B8%E5%90%8C%E7%89%B9%E5%BE%81%E7%94%9F%E6%88%90%E7%9A%84%E8%A7%92%E8%89%B2%E5%B7%AE%E5%BC%82%E6%80%A7%E7%A0%94%E7%A9%B6"><span class="toc-number">1.6.3.1.2.</span> <span class="toc-text">实验2：相同特征生成的角色差异性研究</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C3%EF%BC%9A%E7%89%B9%E5%BE%81%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E7%A0%94%E7%A9%B6"><span class="toc-number">1.6.3.1.3.</span> <span class="toc-text">实验3：特征之间的关系研究</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C4%EF%BC%9A%E7%9B%B8%E5%90%8C%E7%89%B9%E5%BE%81%E4%B8%8B%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E8%A7%92%E8%89%B2%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="toc-number">1.6.3.1.4.</span> <span class="toc-text">实验4：相同特征下不同模型生成角色的差异</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C5%EF%BC%9A%E6%A8%A1%E5%9E%8B%E5%B9%BB%E8%A7%89%E7%A0%94%E7%A9%B6"><span class="toc-number">1.6.3.1.5.</span> <span class="toc-text">实验5：模型幻觉研究</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C6%EF%BC%9A%E7%89%B9%E5%AE%9A%E5%9C%BA%E6%99%AF%E4%B8%8B%E5%B7%A5%E4%BA%BA%E7%9A%84%E7%89%B9%E5%BE%81%E9%80%82%E9%85%8D%E6%80%A7%E7%A0%94%E7%A9%B6"><span class="toc-number">1.6.3.1.6.</span> <span class="toc-text">实验6：特定场景下工人的特征适配性研究</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C7%EF%BC%9A%E7%89%B9%E5%BE%81%E5%88%A0%E9%99%A4%E5%AF%B9%E7%94%9F%E6%88%90%E8%A7%92%E8%89%B2%E7%9A%84%E5%BD%B1%E5%93%8D%E7%A0%94%E7%A9%B6"><span class="toc-number">1.6.3.1.7.</span> <span class="toc-text">实验7：特征删除对生成角色的影响研究</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C1%EF%BC%9A%E4%B8%8D%E5%90%8C%E7%89%B9%E5%BE%81%E7%9A%84%E8%A7%92%E8%89%B2%E5%AE%8C%E6%88%90%E9%80%89%E6%8B%A9%E9%A2%98%E7%9A%84%E5%87%86%E7%A1%AE%E7%8E%87"><span class="toc-number">1.6.3.2.</span> <span class="toc-text">实验1：不同特征的角色完成选择题的准确率</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C2%EF%BC%9A%E7%9B%B8%E5%90%8C%E7%89%B9%E5%BE%81%E7%9A%84%E4%B8%8D%E5%90%8C%E8%A7%92%E8%89%B2%E5%9C%A8%E9%80%89%E6%8B%A9%E9%A2%98%E4%B8%8A%E7%9A%84%E8%A1%A8%E7%8E%B0%E5%B7%AE%E5%BC%82"><span class="toc-number">1.6.3.3.</span> <span class="toc-text">实验2：相同特征的不同角色在选择题上的表现差异</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C3%EF%BC%9A%E7%89%B9%E5%BE%81%E7%BB%84%E5%90%88%E5%AF%B9%E9%80%89%E6%8B%A9%E9%A2%98%E5%87%86%E7%A1%AE%E7%8E%87%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">1.6.3.4.</span> <span class="toc-text">实验3：特征组合对选择题准确率的影响</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C4%EF%BC%9A%E4%B8%8D%E5%90%8C%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E8%A7%92%E8%89%B2%E7%9A%84%E9%80%89%E6%8B%A9%E9%A2%98%E5%87%86%E7%A1%AE%E7%8E%87%E6%AF%94%E8%BE%83"><span class="toc-number">1.6.3.5.</span> <span class="toc-text">实验4：不同模型生成角色的选择题准确率比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C5%EF%BC%9A%E8%A7%92%E8%89%B2%E5%9C%A8%E7%89%B9%E5%AE%9A%E4%BB%BB%E5%8A%A1%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E9%80%89%E6%8B%A9%E9%A2%98%E8%A1%A8%E7%8E%B0"><span class="toc-number">1.6.3.6.</span> <span class="toc-text">实验5：角色在特定任务场景下的选择题表现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C6%EF%BC%9A%E5%88%A0%E9%99%A4%E6%9F%90%E4%BA%9B%E7%89%B9%E5%BE%81%E5%AF%B9%E8%A7%92%E8%89%B2%E9%80%89%E6%8B%A9%E9%A2%98%E8%A1%A8%E7%8E%B0%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">1.6.3.7.</span> <span class="toc-text">实验6：删除某些特征对角色选择题表现的影响</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">1.6.3.8.</span> <span class="toc-text">具体步骤与数据分析</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/06/04/LLM/" title="LLMThings"><img src="/img/LLM%E5%85%A8%E9%83%A8%E8%BF%9B%E5%B1%95-dhb.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LLMThings"/></a><div class="content"><a class="title" href="/2024/06/04/LLM/" title="LLMThings">LLMThings</a><time datetime="2024-06-04T05:55:05.000Z" title="发表于 2024-06-04 13:55:05">2024-06-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" title="这个是我的第一个博客"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这个是我的第一个博客"/></a><div class="content"><a class="title" href="/2024/06/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" title="这个是我的第一个博客">这个是我的第一个博客</a><time datetime="2024-06-03T05:55:05.000Z" title="发表于 2024-06-03 13:55:05">2024-06-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By dhb</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/assets/z16.model.json"},"display":{"position":"left","width":200,"height":250},"mobile":{"show":false},"react":{"opacity":0.7},"log":false});</script></body></html>
